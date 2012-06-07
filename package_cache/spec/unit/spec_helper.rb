@@ -1,4 +1,5 @@
 require File.expand_path(File.join(File.dirname(__FILE__), '..', 'spec_helper'))
+
 def warden_is_alive?
   if File.exists? '/tmp/warden.sock'
     begin
@@ -9,7 +10,6 @@ def warden_is_alive?
   end
   false
 end
-
 
 RSpec.configure do |c|
   # declare an exclusion filter
